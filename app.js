@@ -6,7 +6,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 const appRoute = require('./src/routes/route-tempat-wisata');
-app.use('/api', appRoute);
+app.use('/', appRoute);
 app.get('/hello', function(req, res) {
   res.send({
     msg : "HELOO WORLD"

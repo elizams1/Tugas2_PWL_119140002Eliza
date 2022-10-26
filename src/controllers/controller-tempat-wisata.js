@@ -52,7 +52,7 @@ module.exports ={
         })
     },
 
-    // Simpan data tempat wisata
+    // menambahkan data tempat wisata
     addDataTempatWisata(req,res){
         let data = {
             nama : req.body.nama,
@@ -84,7 +84,7 @@ module.exports ={
             lokasi : req.body.lokasi,
             detail : req.body.detail
         }
-        let id = req.body.id
+        let id = req.params.id
         pool.getConnection(function(err, connection) {
             if (err) throw err;
             connection.query(
@@ -105,7 +105,7 @@ module.exports ={
 
     // Delete data tempat wisata
     deleteDataTempatWisata(req,res){
-        let id = req.body.id
+        let id = req.params.id
         pool.getConnection(function(err, connection) {
             if (err) throw err;
             connection.query(
