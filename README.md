@@ -12,13 +12,16 @@ Pada tugas kali ini menginstall dependensi Express, MySQL, Body-Parser, dan Node
 ## Hasil Rest API Sederhana 
 
 ### method POST
-![]()
+![](./assets/POST.png)
 
 ### method PUT
-![]()
+![](./assets/PUT.png)
 
 ### method GET
-![]()
+![](./assets/GET.png)
+
+## method GET berdasarkan id
+![](./assets/GET-BY-ID.png)
 
 ### method DELETE
-![]()
+![](./assets/DELETE.png)
